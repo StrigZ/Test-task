@@ -28,6 +28,7 @@ const createTimerAnimator = () => {
     //интерфейс
     const interval = setInterval(() => {
       seconds--;
+      if (seconds === 0) clearInterval(interval);
 
       timerHours = Math.floor(seconds / 3600);
       timerMinutes = Math.floor((seconds - 3600 * timerHours) / 60);
