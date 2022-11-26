@@ -4,7 +4,7 @@
 
 @media (min-width: 48rem) {
   .app {
-    background: url("./desktop_bg.jpg");
+    background: url("./assets/desktop_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 0;
