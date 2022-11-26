@@ -2,13 +2,15 @@
   background: #0e1014;
   background-image: url("./mobile_bg.jpg");
   background-size: cover;
-
+  /* Если main секция должна быть на весь экран */
+  /* min-height: calc(100vh - 100px); */
   background-repeat: no-repeat;
   background-position: 0 0;
   font-family: "Inter", sans-serif;
   color: #e4e5ea;
   padding-top: 2.5rem;
   padding-bottom: 3.75rem;
+  z-index: -1;
 }
 
 .main__title {
@@ -80,4 +82,11 @@
   border-style: solid;
   height: 1px;
   width: 10px;
+}
+
+@media (min-width: 48rem) {
+  .main {
+    background: transparent;
+    min-height: calc(100vh - 73px);
+  }
 }
